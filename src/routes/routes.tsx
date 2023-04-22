@@ -1,10 +1,18 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import HomePage from '../pages/home';
+import PrivatePage from '../pages/private';
 
 const RouterController: React.FC = () => {
   return (
-    <h1>Routes</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/private/:id' element={<PrivatePage/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
