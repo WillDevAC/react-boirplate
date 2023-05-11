@@ -10,7 +10,7 @@ const RouterController: React.FC = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/private/:id' element={<PrivatePage/>}/>
+        <Route path='/private/:di' element={<PrivatePage/>}/>
       </Routes>
     </BrowserRouter>
   );
